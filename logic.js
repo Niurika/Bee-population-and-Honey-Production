@@ -49,3 +49,8 @@ var myMap = L.map("map", {
     .bindPopup(`<h1>${state.name}</h1> <hr> <h3>Population ${state.population.toLocaleString()}</h3>`)
     .addTo(myMap);
   };
+
+
+//load data 
+  data = d3.csv('path')
+  console.log(data)
