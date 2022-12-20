@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bee Data</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color:white">
+    <container>
+        <h1>Bee Colonies Across the US</h1>
+        <p>"Short intro paragraph about our project and what the data is exploring"</p>
+    </container>
+    <hr>
+    <container>
+        <p>Dropdown with the names of the states</p>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+    </container>
+    <hr>
+    <container>
+        <p>place holder for our line graph: sales in $ over the years</p>
+    </container>
+    <hr>
+    <container>
+        <p>place holder for our bar chart: production over the years</p>
+    </container>
+    <hr>
+    <container>
+        <p>place holder for another chart if we want to add a fourth</p>
+    </container>
+    <hr>
+    <container>
+          <!-- The div where we'll insert our map -->
+        <div id="map"></div>
+
+  <!-- JavaScript file -->
+        <script type="text/javascript" src="logic.js"></script>
+    </container>
+
+
+
+
+</body>
