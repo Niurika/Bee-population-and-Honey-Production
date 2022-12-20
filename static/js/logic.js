@@ -1,3 +1,21 @@
+//load data 
+data = d3.csv('path')
+console.log(data)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Create a map object.
 var myMap = L.map("map", {
     center: [37.09, -95.71],
