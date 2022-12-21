@@ -43,8 +43,6 @@ function lineChart(stateNames){
   let resultArray = data.filter(x => x.State == stateNames);
   let productionPrice = resultArray.map(i => parseFloat(i["Price Received, Measured in $/Lb"]));
   let productionYear = resultArray.map(i => parseInt(i.Year));
-    console.log(productionPrice);
-    console.log(productionYear);
 
   let trace = [
     {
@@ -56,8 +54,8 @@ function lineChart(stateNames){
   ];
 
   let lineLayout = {
-    title: "Selling Price per lb"
-  }
+    title: 'Selling Price by Year ($/lb)'
+  };
         
   Plotly.newPlot('line', trace, lineLayout);
   })
@@ -84,10 +82,8 @@ function barChart(stateNames){
     };
         
     Plotly.newPlot('bar', barData, barLayout);
-      
     })
-
-  };
+};
 
 function map(){
   // var myMap = L.map("map", {

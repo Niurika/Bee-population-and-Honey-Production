@@ -13,7 +13,7 @@
     crossorigin="" />
 
     <!-- Leaflet JavaScript code -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
     
@@ -21,15 +21,26 @@
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-
-    <!-- JavaScript file -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 </head>
 
 <body style="background-color:rgba(247, 238, 145, 0.554)">
-    <h1>Bee Colonies Across the US!</h1>
-      <p>"Short intro paragraph about our project and what the data is exploring"</p>
+    <h1>American Bee Colony Dashboard</h1>
+      <p>Using data provided by the USDA, our team built three visualizations to show how bee farming in the US has 
+        changed over the past two decades.
+      <ul>
+        <li>Chart 1 shows how the selling price of honey per lb has fluctuated over the course of the study. It is 
+          filtered by state and can be changed using the dropdown at the top left corner of the graph.
+        </li>
+        <li>Chart 2 shows the production volume of honey in lbs by year. It is also filtered by state and will update
+          when the dropdown is manipulated.
+        </li>
+        <li>Chart 3 (map) shows the amount of bee colonies in each state for the most recent year in the study (2021).
+          The name of the state and colony count will show in the top right corner of the map when the mouse is
+          positioned inside a state's border.
+        </li>
+      </ul>
+      </p>
     <hr>
       <select id="selDataset" onchange="optionChanged(this.value)"></select>
       <container>
