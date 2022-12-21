@@ -7,7 +7,7 @@ function init(){
 init()
 
 function dropDown() {
-let data = d3.csv('honey_data_clean.csv').then(function(data) {
+let data = d3.csv('static/honey_data_clean.csv').then(function(data) {
   let states = data.map(i => i.State)
   console.log(states);
 
@@ -83,7 +83,7 @@ let data = d3.csv('honey_data_clean.csv').then(function(data) {
   };
 
   function barChart(stateNames){
-    let data = d3.csv('honey_data_clean.csv').then(function(data) {
+    let data = d3.csv('static/honey_data_clean.csv').then(function(data) {
 
     let resultArray = data.filter(x => x.State == stateNames);
     let productionVolume = resultArray.map(i => i["Production, Measured in Lb"]);
