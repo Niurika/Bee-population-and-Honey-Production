@@ -20,41 +20,24 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src='https://cdn.plot.ly/plotly-2.16.1.min.js'></script>
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="static/css/style.css"> -->
+
+    <!-- JavaScript file -->
+    <script type="text/javascript" src="../static/js/logic.js"></script>
 </head>
 
 <body style="background-color:white">
-    <container>
-        <h1>Bee Colonies Across the US</h1>
-        <p>"Short intro paragraph about our project and what the data is exploring"</p>
-    </container>
+    <h1>Bee Colonies Across the US!</h1>
+      <p>"Short intro paragraph about our project and what the data is exploring"</p>
+    <hr>
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <div id="line"></div>
+      <div id="bar"></div>
     <hr>
     <container>
-        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <div id="map"></div>
     </container>
-    <hr>
-    <container>
-        <p>place holder for our line graph: sales in $ over the years</p>
-    </container>
-    <hr>
-    <container>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-    </container>
-    <hr>
-    <container>
-        <p>place holder for another chart if we want to add a fourth</p>
-    </container>
-    <hr>
-    <container>
-          <!-- The div where we'll insert our map -->
-        <div id="map"></div>
-
-  <!-- JavaScript file -->
-        <script type="text/javascript" src="../static/js/logic.js"></script>
-    </container>
-
 </body>
 </html>
