@@ -27,17 +27,23 @@
     <!-- JavaScript file -->
 </head>
 
-<body style="background-color:white">
+<body style="background-color:rgba(247, 238, 145, 0.554)">
     <h1>Bee Colonies Across the US!</h1>
       <p>"Short intro paragraph about our project and what the data is exploring"</p>
     <hr>
       <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <container>
       <div id="line"></div>
+      </container>
+    <hr>
+    <container> 
       <div id="bar"></div>
+    </container>
     <hr>
     <container>
       <div id="map"></div>
     </container>
+    <hr>
 </body>
 <script type="text/javascript" src="../static/data/us-states.js"></script>
 <script type="text/javascript" src="../static/js/logic.js"></script>
