@@ -8,8 +8,7 @@ OVERVIEW:
 
 DATA EXTRACTION:
 
-    *Our search for data ended with us using the USDA source listed at the bottom of this page. We were able to use the 'Quick Stats' link on their page to clean and download our data to a CSV. Once we had the CSV we pulled it into pandas to further clean the data and upload the result to pgAdmin to create a SQL database. ''''Flask 
-    breakdown''''
+    *Our search for data ended with us using the USDA source listed at the bottom of this page. We were able to use the 'Quick Stats' link on their page to clean and download our data to a CSV. Once we had the CSV we pulled it into pandas to further clean the data and upload the result to pgAdmin to create a SQL database.
 
 VISUALIZATION:
 
