@@ -86,37 +86,7 @@ function barChart(stateNames){
 };
 
 function map(){
-  // var myMap = L.map("map", {
-  //     center: [37.09, -95.71],
-  //     zoom: 5
-  //   });
-
-  //   var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  //       maxZoom: 19,
-  //       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  //   }).addTo(myMap);
-
-  //   L.geoJson(statesData).addTo(myMap);
-
-  // // function onEachFeature(feature, layer) {
-  // //   layer.on({
-  // //     click: layer.bindPopup(`<h1>${statesData.properties.name}</h1>
-  // //     <hr>
-  // //     <h3>Colonies: ${statesData.properties.bee_pop}</h3>`)
-  // //   });
-  // // }
-
-  // var marker = L.marker([51.5, -0.09]).addTo(myMap);
-  //   // Bind a mouseover event to the marker
-  //   marker.on('mouseover', function (e) {
-  //   // Open a popup with information about the marker
-  //   var popup = L.popup()
-  //       .setLatLng(e.properties.geometry.coordinates)
-  //       .setContent(e.properties.name)
-  //       .openOn(myMap);
-  // });
-
-//////////////////////////////////////////
+  
 const map = L.map('map').setView([37.8, -96], 4);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -217,14 +187,7 @@ const map = L.map('map').setView([37.8, -96], 4);
     for (var i = 0; i < grades.length; i++) {
       labels.push('<i style="background-color:' + getColor(grades[i] + 1.0) + '"> <span>' + grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '' : '+') + '</span></i>');
     }
-		// for (let i = 0; i < grades.length; i++) {
-		// 	from = grades[i];
-		// 	to = grades[i + 1];
-
-		// 	labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
-		// }
-
-
+	
 		div.innerHTML = labels.join('<br>');
 		return div;
 	};
